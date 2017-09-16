@@ -1,0 +1,32 @@
+.row-header {
+  margin: 0px auto;
+  padding: 0 0; }
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 400px; }
+  .row-content .row {
+    margin: 0px auto;
+    padding: 0.3em 0; }
+
+.footer {
+  background-color: #D1C4E9;
+  margin: 0px auto;
+  padding: 20px 0px; }
+
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0; }
+
+.navbar-inverse {
+  background-color: #512DA8; }
+
+.form-group {
+  margin: 0px auto;
+  padding: 2px 5px; }
+
+#copy-shipping-details {
+  width: 100%;
+  margin: 3px 5px; }

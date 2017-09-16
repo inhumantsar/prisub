@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css"> </head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">PriSub</a>
+      <div class="collapse navbar-collapse" id="Navbar"> </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row row-content">
+      <div class="col-sm-12 col-lg-6">
+        <form role="form" method="post" action="thankyou.html" data-toggle="validator">
+          <div class="row">
+            <div class="col-10 row-header"><h3>Subscription</h3></div>
+            <div class="col-2" id="preview-cost"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class=""> <label>Photos</label> </div>
+              <div class="">
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-sm btn-secondary active"><input type="radio" name="quantity" checked autocomplete="off" value="6">6</label>
+                  <label class="btn btn-sm btn-secondary"><input type="radio" name="quantity" autocomplete="off" value="12">12</label>
+                  <label class="btn btn-sm btn-secondary"><input type="radio" name="quantity" autocomplete="off" value="24">24</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-5">
+              <div class=""> <label>Frequency</label> </div>
+              <div class="">
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-sm btn-secondary"><input type="radio" name="frequency" autocomplete="off" value="quarter">Quarterly</label>
+                  <label class="btn btn-sm btn-secondary active"><input type="radio" name="frequency" autocomplete="off" checked value="month">Monthly</label>
+                  <label class="btn btn-sm btn-secondary"><input type="radio" name="frequency" autocomplete="off" value="week">Weekly</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class=""> <label>Selection</label> </div>
+              <div class="">
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-sm btn-secondary active"><input type="radio" name="selector" checked autocomplete="off" value="r">Randomly</label>
+                  <label class="btn btn-sm btn-secondary"><input type="radio" name="selector" autocomplete="off" value="l">Most Likes</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-12 row-header"><h3>Shipping Address</h3></div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 form-group">
+              <input type="text" required class="form-control" id="s-firstname" name="s-firstname" placeholder="First Name">
+            </div>
+            <div class="col-lg-6 form-group">
+              <input type="text" required class="form-control" id="s-lastname" name="s-lastname" placeholder="Last Name">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 form-group">
+              <input type="text" required class="form-control" id="s-address1" name="s-address1" placeholder="Address">
+            </div>
+            <div class="col-lg-6 form-group">
+              <input type="text" class="form-control" id="s-address2" name="s-address2" placeholder="Suite/Unit/Apt #">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input type="text" required class="form-control" id="s-city" name="s-city" placeholder="City">
+            </div>
+            <div class="col-sm-2 col-lg-2 form-group">
+              <input type="text" required class="form-control" maxlength="2" id="s-province" name="s-province" placeholder="Prov">
+            </div>
+            <div class="col-sm-4 col-lg-4 form-group">
+              <input type="text" required class="form-control" maxlength="7" id="s-postalcode" name="s-postalcode" placeholder="Postal Code">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 form-group">
+              <input type="email" required class="form-control" id="s-email" name="s-email" placeholder="Email" data-error="That doesn't look right...">
+            </div>
+            <div class="col-lg-6 form-group">
+              <input type="text" required class="form-control" id="s-phone" name="s-phone" placeholder="Phone Number">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 row-header" id="billing-form"><h3>Billing Address</h3></div>
+          </div>
+          <div class="row">
+            <div class="col-12"><a href="#billing-form" id="copy-shipping-details" class="btn btn-primary btn-sm">Copy Shipping Details</a></div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 form-group">
+              <input type="text" required class="form-control" id="b-firstname" name="b-firstname" placeholder="First Name">
+            </div>
+            <div class="col-lg-6 form-group">
+              <input type="text" required class="form-control" id="b-lastname" name="b-lastname" placeholder="Last Name">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 form-group">
+              <input type="text" required class="form-control" id="b-address1" name="b-address1" placeholder="Address">
+            </div>
+            <div class="col-lg-6 form-group">
+              <input type="text" class="form-control" id="b-address2" name="b-address2" placeholder="Suite/Unit/Apt #">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input type="text" required class="form-control" id="b-city" name="b-city" placeholder="City">
+            </div>
+            <div class="col-sm-2 col-lg-2 form-group">
+              <input type="text" required class="form-control" maxlength="2" id="b-province" name="b-province" placeholder="Prov">
+            </div>
+            <div class="col-sm-4 col-lg-4 form-group">
+              <input type="text" required class="form-control" maxlength="6" id="b-postalcode" name="b-postalcode" placeholder="Postal Code">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 form-group">
+              <input type="email" required class="form-control" id="b-email" name="b-email" placeholder="Email">
+            </div>
+
+            <div class="col-lg-6 form-group">
+              <input type="text" required class="form-control" id="b-phone" name="b-phone" placeholder="Phone Number">
+            </div>
+          </div>
+
+
+
+          <div class="row">
+            <div class="col-12 row-header"><h3>Credit Card Information</h3></div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 form-group">
+              <input type="text" required class="form-control" id="cc-number" name="cc-number" placeholder="Credit Card Number">
+            </div>
+
+            <div class="col-lg-4 form-group">
+              <input type="text" required class="form-control" id="cc-expiry" name="cc-expiry" placeholder="Expiry (mm/yy)">
+            </div>
+
+            <div class="col-lg-2 form-group">
+              <input type="text" required class="form-control" id="cc-cvv" name="cc-cvv" placeholder="CVV">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="flex-row-reverse form-group d-flex">
+            <div class="p-2">
+              <button type="submit" class="btn btn-success">Confirm</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!--
+        Preview Images
+          - 3 cols of 6-24 placeholder images
+          - To be replaced by the user's own images.
+      -->
+      <div class="col-sm-12 col-lg-6">
+        <div class="row">
+          <div class="row-header col-12"><h3>Preview</h3></div>
+        </div>
+        <div id="preview-images" class="row">
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="js/copy-shipping-details.js"></script>
+  <script src="js/preview-images.js"></script>
+  <script src="js/preview-cost.js"></script>
+</body>
+
+</html>
